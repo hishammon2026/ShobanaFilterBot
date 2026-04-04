@@ -37,9 +37,9 @@ def parse_size_to_bytes(value: str, default: int = 0) -> int:
     return int(number * scale.get(unit, 1))
 #Bot information
 SESSION = environ.get('SESSION', 'Media_search')
-API_ID = int(environ.get('API_ID', ''))
-API_HASH = environ.get('API_HASH', '')
-BOT_TOKEN = environ.get('BOT_TOKEN', '')
+API_ID = int(environ.get('API_ID', '28390522'))
+API_HASH = environ.get('API_HASH', 'bb6e4438855b6c9ac8d9f0d999a664c4')
+BOT_TOKEN = environ.get('BOT_TOKEN', '8627582266:AAHgTO-eh87dDxy5wIHCcB9TaN9asm8FBwI')
 
 # Keep-Alive URL
 KEEP_ALIVE_URL = environ.get("KEEP_ALIVE_URL", "https://burning-brittney-leech2-3bc21fb5.koyeb.app/")  # <-- Add this line
@@ -51,11 +51,11 @@ REQUEST_FSUB_MODE = bool(environ.get('REQUEST_FSUB_MODE', True))
 BOT_START_TIME = time()
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
 USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', False))
-PICS = (environ.get('PICS', 'https://graph.org/file/2ed90a79eb533d86f8a0f.jpg https://graph.org/file/a0da24dacf4b7bec376a3.jpg https://graph.org/file/457aa9d0e485925088be6.jpg https://graph.org/file/041f7b57c6950070ba16e.jpg https://graph.org/file/f36511f6042d74d95b5df.jpg https://graph.org/file/a30d30b3bc49bd8745533.jpg https://graph.org/file/ce71502cf614059ce1de5.jpg')).split()
+PICS = (environ.get('PICS', 'https://i.ibb.co/j9M7dDGR/x.jpg')).split()
 
 # Admins, Channels & Users
-ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '1892771262').split()]
-CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1002490892111 -1002097504396').split()]
+ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '7042953166').split()]
+CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1003347249321 -1002422052037').split()]
 auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '').split()]
 AUTH_USERS = (auth_users + ADMINS) if auth_users else []
 auth_grp = environ.get('AUTH_GROUP')
@@ -63,7 +63,7 @@ DEFAULT_AUTH_CHANNELS = [int(x) for x in environ.get("AUTH_CHANNEL", "").split()
 AUTH_GROUPS = [int(ch) for ch in auth_grp.split()] if auth_grp else None
 
 # MongoDB information
-DATABASE_URI = environ.get('DATABASE_URI', "")
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://hishammon:hishammon@cluster0.2g7bqyf.mongodb.net/?appName=Cluster0")
 DATABASE_NAME = environ.get('DATABASE_NAME', "Cluster0")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'mn_files')
 DATABASE_URI2 = environ.get('DATABASE_URI2', "")
@@ -78,20 +78,20 @@ POSTGRES_URI = environ.get('POSTGRES_URI', '')
 POSTGRES_STORAGE_LIMIT_BYTES = parse_size_to_bytes(environ.get('POSTGRES_STORAGE_LIMIT_BYTES', '1GB'), 0)
 
 # File Channel Settings
-FILE_CHANNELS = [int(ch) for ch in environ.get('FILE_CHANNELS', '-1002831639976 -1002607076908 -1002869981026').split()]
+FILE_CHANNELS = [int(ch) for ch in environ.get('FILE_CHANNELS', '-1003738723344').split()]
 FILE_CHANNEL_SENDING_MODE = is_enabled(environ.get('FILE_CHANNEL_SENDING_MODE', 'True'), False)
-FILE_AUTO_DELETE_SECONDS = int(environ.get('FILE_AUTO_DELETE_SECONDS', 60))  # Default: 1 minute
+FILE_AUTO_DELETE_SECONDS = int(environ.get('FILE_AUTO_DELETE_SECONDS', 300))  # Default: 5 minute
 
 # Others
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002345447637'))
-SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'mnbots_support')
+LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '100356191882'))
+SUPPORT_CHAT = environ.get('SUPPORT_CHAT', '')
 P_TTI_SHOW_OFF = is_enabled((environ.get('P_TTI_SHOW_OFF', 'False')), False)
-IMDB = is_enabled((environ.get('IMDB', 'False')), False)
+IMDB = is_enabled((environ.get('IMDB', 'True')), False)
 SINGLE_BUTTON = is_enabled((environ.get('SINGLE_BUTTON', 'True')), True)
 CUSTOM_FILE_CAPTION = environ.get("CUSTOM_FILE_CAPTION", f"{script.CUSTOM_FILE_CAPTION}") 
 BATCH_FILE_CAPTION = environ.get("BATCH_FILE_CAPTION", "📂 <em>File Name</em>: <code>{file_name}</code>\n\n ♻ <em>File Size</em>:{file_size} \n\n <b><i>Latest Movies -</i> </b>")
 IMDB_TEMPLATE = environ.get("IMDB_TEMPLATE", "🏷 𝖳𝗂𝗍𝗅𝖾: <a href={url}>{title}</a> \n🔮 𝖸𝖾𝖺𝗋: {year} \n⭐️ 𝖱𝖺𝗍𝗂𝗇𝗀𝗌: {rating}/ 10 \n🎭 𝖦𝖾𝗇𝖾𝗋𝗌: {genres}")
-LONG_IMDB_DESCRIPTION = is_enabled(environ.get("LONG_IMDB_DESCRIPTION", "False"), False)
+LONG_IMDB_DESCRIPTION = is_enabled(environ.get("LONG_IMDB_DESCRIPTION", "True"), False)
 SPELL_CHECK_REPLY = is_enabled(environ.get("SPELL_CHECK_REPLY", "True"), True)
 MAX_LIST_ELM = environ.get("MAX_LIST_ELM", None)
 INDEX_REQ_CHANNEL = int(environ.get('INDEX_REQ_CHANNEL', LOG_CHANNEL))
