@@ -1,7 +1,6 @@
 class script(object):
     START_TXT = """ Hᴇʟʟᴏ {}.
-𝖨𝗆 𝖺𝗇 𝖺𝗎𝗍𝗈 𝖿𝗂𝗅𝗍𝖾𝗋 𝖻𝗈𝗍 made by hisham i 𝖼𝖺𝗇 𝗉𝗋𝗈𝗏𝗂𝖽𝖾 𝗆𝗈𝗏𝗂𝖾𝗌 𝗂𝗇 𝗒𝗈𝗎𝗋 𝗀𝗋𝗈𝗎𝗉𝗌.
-+ 𝖠𝖽𝖽 𝖬𝖾 𝖳𝗈 𝖸𝗈𝗎𝗋 𝖦𝗋𝗈𝗎𝗉 + 𝖺𝗇𝖽 𝗉𝗋𝗈𝗆𝗈𝗍𝖾 𝗆𝖾 𝖺𝗌 𝖺𝖽𝗆𝗂𝗇 𝗍𝗈 𝗅𝖾𝗍 𝗆𝖾 𝗀𝖾𝗍 𝗂𝗇 𝖺𝖼𝗍𝗂𝗈𝗇."""
+𝖨𝗆 𝖺𝗇 𝖺𝗎𝗍𝗈 𝖿𝗂𝗅𝗍𝖾𝗋 𝖻𝗈𝗍 help to find any movies with premium features 😈😈 + add me to your group and create a movie group + search movies or series below 💘💘 ."""
     HELP_TXT = """
 <b>Hey {} 👋</b>
 
@@ -80,7 +79,7 @@ Each help page contains a short list for easy reading.
 ◎ Cʀᴇᴀᴛᴏʀ: <a href=https://t.me/hishammon> O - HISHAM </a>
 ◎ Lᴀɴɢᴜᴀɢᴇ: Pʏᴛʜᴏɴ 3
 ◎ Dᴀᴛᴀ Bᴀsᴇ: Mᴏɴɢᴏ DB
-◎ Bᴏᴛ Sᴇʀᴠᴇʀ: KoYeb</b>"""
+◎ Bᴏᴛ Sᴇʀᴠᴇʀ: LION</b>"""
     SOURCE_TXT = """<b>NOTE:</b>
 - THIS BOT IS A PRIVATE BOT BY HISHAM
 - check - <ahref=https://t.me/hishammon>Click Here to contact admin</a>
@@ -107,7 +106,6 @@ Each help page contains a short list for easy reading.
 1. Telegram will not allows you to send buttons without any content, so content is mandatory.
 2. This Bot supports buttons with any telegram media type.
 3. Buttons should be properly parsed as markdown format
-
 <b>URL buttons:</b>
 <code>[Button Text](buttonurl:https://t.me/bothelpersosupport/32)</code>
 
@@ -189,9 +187,9 @@ FɪʟᴇSɪᴢᴇ : {file_size}
 
 ╔═  ᴊᴏɪɴ ᴡɪᴛʜ ᴜs   ═╗
  Jᴏɪɴ :- [MAIN CHANNEL](https://t.me/bothelpersosupport)
-╚═  ᴊᴏɪɴ JOIN NOW  ═╝
+╚═  ᴊᴏɪɴ NOW ═╝
 
-⚠️ <b>This file will be deleted from here within 1 minute as it has copyright ... !!!</b>
+⚠️ <b>This file will be deleted from here within 5 minute as it has copyright ... !!!</b>
 
 <b>കോപ്പിറൈറ്റ് ഉള്ളതുകൊണ്ട് ഫയൽ 5 മിനിറ്റിനുള്ളിൽ ഇവിടെനിന്നും ഡിലീറ്റ് ആകുന്നതാണ് അതുകൊണ്ട് ഇവിടെ നിന്നും മറ്റെവിടെക്കെങ്കിലും മാറ്റിയതിന് ശേഷം ഡൗൺലോഡ് ചെയ്യുക!</b>
 """
